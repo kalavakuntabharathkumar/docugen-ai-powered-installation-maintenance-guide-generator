@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <title>DocuGen</title>
+    <link rel='stylesheet' href='/static/style.css'>
+</head>
+<body>
+    <div class='container'>
+        <h1>DocuGen</h1>
+        <p>Generate installation and maintenance guides for GitHub repositories.</p>
+        <form method='POST' action='/generate'>
+            <label for='repo_url'>GitHub Repository URL:</label>
+            <input type='text' id='repo_url' name='repo_url' placeholder='https://github.com/owner/repo' required>
+            <input type='submit' value='Generate'>
+        </form>
+    </div>
+</body>
+</html>
